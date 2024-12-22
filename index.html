@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famglodan Lounge & Living</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            color: #333;
+            background: linear-gradient(120deg, #ececec, #f8f8f8);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        section p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Services List */
+        section ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Booking Form */
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        form textarea {
+            resize: none;
+        }
+
+        form button {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border: none;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #34495e;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Famglodan Lounge & Living</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>Welcome to Famglodan Lounge & Living</h2>
+        <p>Discover unparalleled comfort and luxury at Famglodan Lounge & Living. Experience an atmosphere tailored for relaxation and elegance.</p>
+    </section>
+
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Luxurious Lounge Spaces</li>
+            <li>Exclusive Events</li>
+            <li>Premium Dining</li>
+            <li>Personalized Concierge Services</li>
+        </ul>
+    </section>
+
+    <section id="booking" class="container">
+        <h2>Book Your Experience</h2>
+        <form action="https://formspree.io/f/xovvapwg" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Message or Special Requests:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Famglodan Lounge & Living. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

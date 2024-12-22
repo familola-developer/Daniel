@@ -1,0 +1,16 @@
+/* styles.css */
+
+/* General Reset */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9
+}
